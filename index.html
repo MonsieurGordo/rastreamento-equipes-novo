@@ -13,7 +13,7 @@
                         const timestamp = new Date().toISOString();
                         const nomeTecnico = prompt("Digite seu nome (ou código da equipe):");
                         if (nomeTecnico) {
-                            const scriptUrl = "https://script.google.com/macros/s/SEU_SCRIPT_ID/exec";
+                            const scriptUrl = "https://script.google.com/macros/s/AKfycbwUBxFu411IqcWQEjFemKUBpGDYrUU4a0sNjZa2fQ5CUIoUvFzjlEEJiKVyISN21Xrhdw/exec";
                             const data = `nome=${nomeTecnico}&latitude=${latitude}&longitude=${longitude}&timestamp=${timestamp}`;
                             fetch(`${scriptUrl}?${data}`)
                                 .then(response => response.text())
